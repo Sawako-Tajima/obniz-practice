@@ -26,7 +26,7 @@
         leds = obniz.wired("WS2812", { din: 26 }); // for M5 Atom lite
         obniz.onloop = async function () {
           let color = [h, 1.0, 0.2];
-          h += 10;
+          h += 5;
           if (h > 360) h = 1;
           shift(color);
           obniz.wait(300);
